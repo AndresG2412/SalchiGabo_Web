@@ -1,7 +1,9 @@
+import BoxIzq from "./components/BoxIzq";
+
 export default function App() {
   return(
     <>
-      <p className="">Hola</p>
+      <BoxIzq/>
     </>
   );
 }
