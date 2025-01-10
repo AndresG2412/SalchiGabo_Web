@@ -2,16 +2,19 @@
     {
         "id": "1",
         "titulo": "Salchipapa Personal",
-        "descripcion": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+        "descripcion": "Ingredientes: Salchicha Americana, Papa Amarilla, Lluvia de Papa Ripio y Salsas a gusto",
+        "image": "/src/images/assets/sal_personal.png"
     },
     {
         "id": "2",
         "titulo": "Salchipapa Mediana",
-        "descripcion": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+        "descripcion": "Ingredientes: Salchicha Americana, Chorizo Premium, Papa Amarilla, Lluvia de Papa Ripio y Salsas a gusto",
+        "image": "/src/images/assets/sp_g.png"
     },
     {
         "id": "3",
         "titulo": "Salchipapa Grande (x2)",
-        "descripcion": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+        "descripcion": "Ingredientes: Salchicha Americana x2, Chorizo Premium x2, Papa Amarilla x2, Lluvia de Papa Ripio y Salsas a gusto",
+        "image": "/src/images/assets/sp_g1.png"
     }
 ]

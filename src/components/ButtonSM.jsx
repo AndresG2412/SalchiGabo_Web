@@ -1,4 +1,6 @@
-export default function Button({img, titulo, color}) {
+import wpp from '../images/whatsapp.png';
+
+export default function ButtonSM() {
 
     const redirectToWhatsApp = () => {
         const phoneNumber = '3157870130';
@@ -10,12 +12,11 @@ export default function Button({img, titulo, color}) {
     return(
         <>
             <button 
-                className={`border-2 border-black rounded-xl px-4 py-2 ${color} flex gap-3 font-bold uppercase mt-6 text-2xl items-center`}
+                className={`md:hidden border-2 border-black rounded-xl px-4 py-2 bg-green-500 flex gap-3 font-bold uppercase mt-6 text-2xl items-center`}
                 onClick={redirectToWhatsApp}
                 >
-
-                <img src={img} alt="img_boton" className="w-8 h-8"/>
-                {titulo}
+                <img src={wpp} alt="img_boton" className="w-8 h-8"/>
+                HACER PEDIDO
             </button>
         </>
     );

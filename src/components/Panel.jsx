@@ -6,7 +6,7 @@ import gmail from '../images/gmail.png';
 export default function Panel() {
     return (
         <div
-            className="hidden sm:hidden md:flex flex-col items-center justify-center h-screen border-r-4 border-black"
+            className="hidden md:px-8 md:flex flex-col items-center justify-center h-screen border-r-4 border-black"
             style={{ backgroundColor: 'rgba(255, 255, 255, 0.7)' }}
         >
             {/* Imagen escalable */}
@@ -22,7 +22,7 @@ export default function Panel() {
             </p>
             {/* Botones */}
             <Button color={'bg-green-500'} titulo={'Whatsapp'} img={wpp} />
-            <Button color={'bg-red-500'} titulo={'Correo'} img={gmail} />
+            {/* <Button color={'bg-red-500'} titulo={'Correo'} img={gmail} /> */}
         </div>
     );
 }
