@@ -7,13 +7,24 @@ import LogoSM from "./components/LogoSM.jsx";
 import datos from "../datos.json";
 
 export default function App() {
-
     return(
-        <div className="md:flex md:justify-between">
+        <div>
+            <div className="md:flex md:justify-between">
                 <LogoSM/>
                 <Panel/>
+                {/* Contenedor para las cards */}
+                    <div className="md:flex flex-wrap justify-center">
+                        {datos.map((item) => (
+                            <Card
+                                key={item.id}
+                                titulo={item.titulo}
+                                descripcion={item.descripcion}
+                            />
+                        ))}
+                    </div>
                 <NavbarMD/>
                 <NavbarSM/>
+            </div>
         </div>
     );
 }
