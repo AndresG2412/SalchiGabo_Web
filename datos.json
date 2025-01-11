@@ -3,18 +3,18 @@
         "id": "1",
         "titulo": "Salchipapa Pequeña",
         "descripcion": "Salchipapa Pequeña",
-        "image": "./public/images/sal_personal.png"
+        "image": "/images/sal_personal.png"
     },
     {
         "id": "2",
         "titulo": "Salchipapa Mediana",
         "descripcion": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-        "image": "./public/images/sp_g.png"
+        "image": "/images/sp_g.png"
     },
     {
         "id": "3",
         "titulo": "Salchipapa Grande (x2)",
         "descripcion": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-        "image": "./public/images/sp_g1.png"
+        "image": "/images/sp_g1.png"
     }
 ]
