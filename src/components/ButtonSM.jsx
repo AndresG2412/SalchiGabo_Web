@@ -10,7 +10,7 @@ export default function ButtonSM() {
     };
 
     return(
-        <>
+        <div className='block'>
             <button 
                 className={`md:hidden border-2 border-black rounded-xl px-4 py-2 bg-green-500 flex gap-3 font-bold uppercase mt-6 text-2xl items-center`}
                 onClick={redirectToWhatsApp}
@@ -18,6 +18,7 @@ export default function ButtonSM() {
                 <img src={wpp} alt="img_boton" className="w-8 h-8"/>
                 HACER PEDIDO
             </button>
-        </>
+            <p className='mt-6 font-semibold tracking-wide text-xl pb-2 border-b-2 border-white text-white text-center'>Envio $1000 mil pesos!</p>
+        </div>
     );
 }

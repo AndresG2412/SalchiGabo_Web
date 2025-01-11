@@ -23,6 +23,7 @@ export default function Panel() {
             {/* Botones */}
             <Button color={'bg-green-500'} titulo={'Whatsapp'} img={wpp} />
             {/* <Button color={'bg-red-500'} titulo={'Correo'} img={gmail} /> */}
+            <p className='mt-6 font-semibold tracking-wide text-xl pb-2 border-b-2 border-black text-center'>Envio $1000 mil pesos!</p>
         </div>
     );
 }
