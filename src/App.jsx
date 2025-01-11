@@ -21,6 +21,7 @@ export default function App() {
                                 titulo={item.titulo}
                                 descripcion={item.descripcion}
                                 ruta={item.image}
+                                precio={item.precio}
                             />
                         ))}
                     </div>
