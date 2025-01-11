@@ -6,7 +6,7 @@ export default function Card({titulo, descripcion, ruta, precio}) {
                     <img src={ruta} alt="img_salchipapa" className="rounded-xl w-36"/>
                 </div>
                 <div className='md:flex md:flex-col md:justify-center text-center md:text-left'>
-                    <p className="font-bold text-xl md:text-3xl text-white md:mt-0 mt-6">{titulo}</p>
+                    <p className="font-bold text-2xl md:text-3xl text-white md:mt-0 mt-6">{titulo}</p>
                     <p className="font-semibold text-lg md:text-xl text-white mt-2">{descripcion}</p>
                     <p className="font-semibold text-xl md:text-2xl text-white mt-2">$ {precio} mil</p>
                 </div>
