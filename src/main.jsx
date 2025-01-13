@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')).render(
         left: 0,
         width: '100vw',
         height: '100vh',
-        zIndex: -1,
+        zIndex: -2,
         opacity: 0.2,
       }}
     >
