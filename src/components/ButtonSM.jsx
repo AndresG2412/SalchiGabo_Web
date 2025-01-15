@@ -26,7 +26,7 @@ export default function ButtonSM() {
                 </button>
             </div>
 
-            <p className='mt-6 font-semibold tracking-wide text-xl pb-2 border-b-2 border-white text-white text-center'>Envio $1000 pesos!</p>
+            <p className='mt-6 font-semibold tracking-wide text-xl pb-2 border-b-2 border-white text-white text-center'>Envio $2000 pesos!</p>
         </div>
     );
 }
