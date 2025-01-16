@@ -5,6 +5,8 @@ import NavbarSM from "./components/NavbarSM.jsx";
 import LogoSM from "./components/LogoSM.jsx";
 import ButtonSM from "./components/ButtonSM.jsx";
 
+import CardV2 from "./components/New/CardV2.jsx";
+
 import datos from "../datos.json";
 
 export default function App() {
@@ -12,19 +14,19 @@ export default function App() {
         <div>
             <div className="md:flex md:justify-between pb-24 md:pb-0">
                 <LogoSM/>
-                <Panel/>
+                {/* <Panel/> */}
                 {/* Contenedor para las cards */}
-                    <div className="md:flex flex-wrap justify-center">
-                        {datos.map((item) => (
-                            <Card
-                                key={item.id}
-                                titulo={item.titulo}
-                                descripcion={item.descripcion}
-                                ruta={item.image}
-                                precio={item.precio}
-                            />
-                        ))}
-                    </div>
+                <div className="md:flex flex-wrap justify-center">
+                    {datos.map((item) => (
+                        <CardV2
+                            key={item.id}
+                            titulo={item.titulo}
+                            descripcion={item.descripcion}
+                            ruta={item.image}
+                            precio={item.precio}
+                        />
+                    ))}
+                </div>
                 {/* <NavbarMD/>
                 <NavbarSM/> */}
                 <div className="flex justify-center mt-6 md:hidden">
