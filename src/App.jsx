@@ -5,6 +5,8 @@ import NavbarSM from "./components/NavbarSM.jsx";
 import LogoSM from "./components/LogoSM.jsx";
 import ButtonSM from "./components/ButtonSM.jsx";
 
+import Wpp from "./components/New/Wpp.jsx";
+
 import CardV2 from "./components/New/CardV2.jsx";
 
 import datos from "../datos.json";
@@ -27,6 +29,7 @@ export default function App() {
                     ))}
                 </div>
 
+                <Wpp/>
                 {/* <NavbarMD/> */}
                 {/* <NavbarSM/> */}
                 {/* <div className="flex justify-center mt-6 md:hidden">
