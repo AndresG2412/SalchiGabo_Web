@@ -12,11 +12,11 @@ import datos from "../datos.json";
 export default function App() {
     return(
         <div>
-            <div className="md:flex md:justify-between pb-24 md:pb-0">
-                <LogoSM/>
+            <div className="">
+                {/* <LogoSM/> */}
                 {/* <Panel/> */}
                 {/* Contenedor para las cards */}
-                <div className="md:flex flex-wrap justify-center">
+                <div className="md:flex md:justify-center">
                     {datos.map((item) => (
                         <CardV2
                             key={item.id}
@@ -27,11 +27,11 @@ export default function App() {
                         />
                     ))}
                 </div>
-                {/* <NavbarMD/>
-                <NavbarSM/> */}
-                <div className="flex justify-center mt-6 md:hidden">
+                <NavbarMD/>
+                {/* <NavbarSM/> */}
+                {/* <div className="flex justify-center mt-6 md:hidden">
                     <ButtonSM/>
-                </div>
+                </div> */}
             </div>
         </div>
     );
