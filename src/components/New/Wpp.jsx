@@ -1,11 +1,19 @@
 export default function Wpp() {
+
+    const redirectToWhatsApp = () => {
+        const phoneNumber = '3157870130';
+        const message = encodeURIComponent('Hola! quisiera hacer un pedido por favor');
+        const url = `https://wa.me/+57${phoneNumber}?text=${message}`;
+        window.location.href = url;
+    };
+
     return(
         <>
-            <div class="flex items-center justify-center my-12">
+            <div class="flex items-center justify-center my-12 md:my-0 md:mt-10">
                 <div class="relative group">
                     <button
                     class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
-                    >
+                    onClick={redirectToWhatsApp}>
                     <span
                         class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                     ></span>
