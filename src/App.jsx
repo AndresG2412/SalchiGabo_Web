@@ -13,9 +13,8 @@ export default function App() {
     return(
         <div>
             <div className="">
-                {/* <LogoSM/> */}
-                {/* <Panel/> */}
-                {/* Contenedor para las cards */}
+                <LogoSM/>
+                
                 <div className="md:flex md:justify-center">
                     {datos.map((item) => (
                         <CardV2
@@ -27,7 +26,8 @@ export default function App() {
                         />
                     ))}
                 </div>
-                <NavbarMD/>
+
+                {/* <NavbarMD/> */}
                 {/* <NavbarSM/> */}
                 {/* <div className="flex justify-center mt-6 md:hidden">
                     <ButtonSM/>
