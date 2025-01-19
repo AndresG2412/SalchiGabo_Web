@@ -1,21 +1,33 @@
+import React, { useEffect } from "react";
 import Card from "./components/Card.jsx";
-import Panel from './components/Panel.jsx'
-import NavbarMD from './components/NavbarMD.jsx'
+import Panel from './components/Panel.jsx';
+import NavbarMD from './components/NavbarMD.jsx';
 import NavbarSM from "./components/NavbarSM.jsx";
 import LogoSM from "./components/LogoSM.jsx";
 import ButtonSM from "./components/ButtonSM.jsx";
 
 import Wpp from "./components/New/Wpp.jsx";
-
 import CardV2 from "./components/New/CardV2.jsx";
 
 import datos from "../datos.json";
 
+import Swal from 'sweetalert2';
+
 export default function App() {
-    return(
+    
+    useEffect(() => {
+        Swal.fire({
+            icon: "warning",
+            title: "Solo por tiempo limitado",
+            text: "¡Tenemos nuevas adiciones! Pregunta por ellas a nuestro número personal.",
+            confirmButtonText: "Entendido!"
+        });
+    }, []); // [] asegura que se ejecute solo una vez al montar el componente
+
+    return (
         <div>
             <div className="">
-                <LogoSM/>
+                <LogoSM />
                 
                 <div className="md:flex md:justify-center">
                     {datos.map((item) => (
@@ -29,7 +41,7 @@ export default function App() {
                     ))}
                 </div>
 
-                <Wpp/>
+                <Wpp />
                 {/* <NavbarMD/> */}
                 {/* <NavbarSM/> */}
                 {/* <div className="flex justify-center mt-6 md:hidden">
