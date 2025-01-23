@@ -6,6 +6,7 @@ import LogoSM from "./components/LogoSM.jsx";
 //componentes en uso
 import Wpp from "./components/New/Wpp.jsx";
 import CardV2 from "./components/New/CardV2.jsx";
+import Navbar from "./components/Navbar.jsx";
 
 //datos de json
 import datos from "../datos.json";
@@ -41,6 +42,8 @@ export default function App() {
                         />
                     ))}
                 </div>
+
+                <Navbar />
             </div>
         </div>
     );

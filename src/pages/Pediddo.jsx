@@ -1,4 +1,4 @@
-export default function pedido() {
+export default function Pedido() {
     return(
         <>
             
