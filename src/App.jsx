@@ -8,6 +8,7 @@ import ButtonSM from "./components/ButtonSM.jsx";
 
 import Wpp from "./components/New/Wpp.jsx";
 import CardV2 from "./components/New/CardV2.jsx";
+import Coments from "./components/New/Coments.jsx";
 
 import datos from "../datos.json";
 
@@ -42,6 +43,7 @@ export default function App() {
                 </div>
 
                 <Wpp />
+                <Coments />
                 {/* <NavbarMD/> */}
                 {/* <NavbarSM/> */}
                 {/* <div className="flex justify-center mt-6 md:hidden">
