@@ -1,18 +1,18 @@
 import React, { useEffect } from "react";
-import Card from "./components/Card.jsx";
-import Panel from './components/Panel.jsx';
-import NavbarMD from './components/NavbarMD.jsx';
-import NavbarSM from "./components/NavbarSM.jsx";
-import LogoSM from "./components/LogoSM.jsx";
-import ButtonSM from "./components/ButtonSM.jsx";
 
+//logo header
+import LogoSM from "./components/LogoSM.jsx";
+
+//componentes en uso
 import Wpp from "./components/New/Wpp.jsx";
 import CardV2 from "./components/New/CardV2.jsx";
-import Coments from "./components/New/Coments.jsx";
 
+//datos de json
 import datos from "../datos.json";
 
+//alerta de inicio
 import Swal from 'sweetalert2';
+
 
 export default function App() {
     
@@ -41,14 +41,6 @@ export default function App() {
                         />
                     ))}
                 </div>
-
-                <Wpp />
-                <Coments />
-                {/* <NavbarMD/> */}
-                {/* <NavbarSM/> */}
-                {/* <div className="flex justify-center mt-6 md:hidden">
-                    <ButtonSM/>
-                </div> */}
             </div>
         </div>
     );
