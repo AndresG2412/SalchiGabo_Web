@@ -1,5 +1,6 @@
-//logo header
-import LogoSM from "./components/LogoSM.jsx";
+//importaciones necesarias front-end
+import Navbar from "../components/Navbar"
+import LogoSM from "../components/LogoSM"
 
 export default function Carrito(){
     return(
@@ -12,6 +13,8 @@ export default function Carrito(){
                 <p>tu carrito esta vacio!</p>
                 <p>Vuelve al menu y añade loq ue deseas pedir</p>
             </div>
+
+            <Navbar />
         </>
     )
 }
