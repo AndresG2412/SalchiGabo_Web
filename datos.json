@@ -4,20 +4,20 @@
         "titulo": "Salchipapa Pequeña",
         "descripcion": "Ingredientes: Salchicha Americana, Papa Amarilla, Lluvia de Papa Ripio y Salsas de la casa",
         "image": "/images/sal_personal.png",
-        "precio": "10.000"
+        "precio": "12.000"
     },
     {
         "id": "2",
         "titulo": "Salchipapa Mediana",
         "descripcion": "Ingredientes: Salchicha Americana, Papa Amarilla, Lluvia de Papa Ripio, Chorizo Premium y Salsas de la casa",
         "image": "/images/sp_g.png",
-        "precio": "13.000"
+        "precio": "15.000"
     },
     {
         "id": "3",
         "titulo": "Salchipapa Grande",
         "descripcion": "Ingredientes: Salchicha Americana x2, Papa Amarilla x2, Lluvia de Papa Ripio x2, Chorizo Premium x2 y Salsas de la casa",
         "image": "/images/sp_g1.png",
-        "precio": "23.000"
+        "precio": "25.000"
     }
 ]
