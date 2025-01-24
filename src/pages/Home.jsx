@@ -25,6 +25,22 @@ export default function Home() {
         });
     }, []); // [] asegura que se ejecute solo una vez al montar el componente
 
+    // Mostrar la alerta solo la primera vez que se carga/reinicia la página
+    useEffect(() => {
+        const hasSeenAlert = localStorage.getItem("hasSeenAlert");
+
+        if (!hasSeenAlert) {
+            Swal.fire({
+                title: "Solo por tiempo limitado",
+                text: "¡Tenemos nuevas adiciones! Pregunta por ellas a nuestro número personal.",
+                icon: "warning",
+                confirmButtonText: "Entendido!",
+            }).then(() => {
+                localStorage.setItem("hasSeenAlert", "true"); // Marcar que ya se mostró la alerta
+            });
+        }
+    }, []);
+
     return (
         <div>
             <div className="">
