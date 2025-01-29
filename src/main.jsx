@@ -1,8 +1,9 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from "react-router";
+import { BrowserRouter } from "react-router"; // Corregir la importación
 import './index.css';
 import App from './App.jsx';
+import { CartProvider } from './CartContext.jsx'; // Importar CartProvider
 
 import { Opulento } from "uvcanvas";
 
@@ -22,9 +23,11 @@ createRoot(document.getElementById('root')).render(
       <Opulento />
     </div>
     <StrictMode>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <CartProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </CartProvider>
     </StrictMode>
   </>
 );
