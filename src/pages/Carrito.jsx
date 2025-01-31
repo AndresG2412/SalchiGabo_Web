@@ -27,12 +27,15 @@ export default function Carrito() {
                   </li>
                 ))}
               </ul>
-              <p className="py-2 pl-3">Total: ${total}.000</p> {/* Interpolación para mostrar el símbolo $ */}
+              <p className="py-2 pl-3 border-b-2 border-black">Total: ${total}.000</p> {/* Interpolación para mostrar el símbolo $ */}
+            <div className="flex gap-x-6 items-center justify-center">
+              <button className="bg-red-100 border-2 border-black px-4 py-2 rounded-lg my-5 text-xl border-b-4 hover:scale-110 hover:transition-all">HACER PEDIDO</button>
+              <button className="bg-green-100 border-2 border-black px-4 py-2 rounded-lg my-5 text-xl border-b-4 hover:scale-110 hover:transition-all">AÑADIR ADICIONES</button>
+            </div>
             </div>
           )}
         </div>
       </div>
-
       <Navbar />
     </>
   );
