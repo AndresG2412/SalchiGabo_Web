@@ -3,9 +3,11 @@ import React, { useContext } from "react";
 import { CartContext } from "../CartContext";
 import Navbar from "../components/Navbar";
 import LogoSM from "../components/LogoSM";
+import { useNavigate } from "react-router"; // Importa el hook useNavigate
 
 export default function Carrito() {
   const { cart } = useContext(CartContext); // Usar el contexto
+  const navigate = useNavigate(); // Inicializa el hook useNavigate
 
   // Calcula el total usando reduce
   const total = cart.reduce((acumulador, producto) => acumulador + parseFloat(producto.precio), 0);
@@ -27,7 +29,7 @@ export default function Carrito() {
   };
 
   const hacerAdiciones = () => {
-    console.log("adiciones realizadas!");
+    navigate("/adiciones")
   };
 
   return (

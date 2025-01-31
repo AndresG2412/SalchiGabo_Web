@@ -1,4 +1,4 @@
-export default function Coments(){
+export default function Comments(){
     return(
         <div className="bg-white flex flex-col justify-center items-center gap-y-4  py-4 my-12 mx-auto rounded-lg md:w-1/5">
             <div>
