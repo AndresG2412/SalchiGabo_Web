@@ -11,30 +11,6 @@ import datos from "../../datos.json";
 export default function Home() {
   const { addToCart } = useContext(CartContext); // Usar el contexto
 
-  useEffect(() => {
-    Swal.fire({
-      icon: "warning",
-      title: "Solo por tiempo limitado",
-      text: "¡Tenemos nuevas adiciones! Pregunta por ellas a nuestro número personal.",
-      confirmButtonText: "Entendido!",
-    });
-  }, []);
-
-  useEffect(() => {
-    const hasSeenAlert = localStorage.getItem("hasSeenAlert");
-
-    if (!hasSeenAlert) {
-      Swal.fire({
-        title: "Solo por tiempo limitado",
-        text: "¡Tenemos nuevas adiciones! Pregunta por ellas a nuestro número personal.",
-        icon: "warning",
-        confirmButtonText: "Entendido!",
-      }).then(() => {
-        localStorage.setItem("hasSeenAlert", "true");
-      });
-    }
-  }, []);
-
   return (
     <div>
       <div className="">
