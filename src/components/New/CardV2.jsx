@@ -13,7 +13,7 @@ export default function CardV2({ruta, titulo, descripcion, precio, onAddToCart }
                     <p className="font-nunito font-bold text-2xl text-white my-6 md:my-4">$ {precio} pesos</p>
                 </div>
                 <div className="flex justify-center gap-4">
-                    <button className="flex items-center justify-center gap-2 font-bold py-2 shadow-2xl bg-[#cdf9dd] text-center rounded-[15px] w-36 hover:scale-110 transition-transform"><img src={send} alt="add" className="w-[30px]"/>ORDENAR</button>
+                    {/* <button className="flex items-center justify-center gap-2 font-bold py-2 shadow-2xl bg-[#cdf9dd] text-center rounded-[15px] w-36 hover:scale-110 transition-transform"><img src={send} alt="add" className="w-[30px]"/>ORDENAR</button> */}
                     
                     <button 
                         onClick={onAddToCart}
