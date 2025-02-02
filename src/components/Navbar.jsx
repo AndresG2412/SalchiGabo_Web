@@ -7,11 +7,11 @@ export default function Navbar() {
   const navigate = useNavigate(); // Inicializa el hook useNavigate
 
   return (
-    <div className="w-screen bg-gray-200 shadow-2xl flex fixed">
+    <div className="w-screen flex">
       {/* Botón para ir a "/" */}
       <div className="mx-auto flex">
         <button
-          className="px-4 py-2 mx-4 my-2 flex items-center hover:bg-gray-400 hover:scale-125 rounded-lg hover:transition-all"
+          className="bg-slate-200 text-xl tracking-wider font-semibold uppercase md:w-44 px-4 py-2 mx-4 my-2 flex items-center justify-center hover:bg-gray-400 hover:scale-125 rounded-lg hover:transition-all"
           onClick={() => navigate("/")} // Redirige a "/"
         >
           <img src={Menu} alt="icon_navbar" className="w-8 mr-3" />
@@ -20,7 +20,7 @@ export default function Navbar() {
 
         {/* Botón para ir a "/carrito" */}
         <button
-          className="px-4 py-2 mx-4 my-2 flex items-center hover:bg-gray-400 hover:scale-125 rounded-lg hover:transition-all"
+          className="bg-slate-200 text-xl tracking-wider font-semibold uppercase md:w-44 px-4 py-2 mx-4 my-2 flex items-center justify-center hover:bg-gray-400 hover:scale-125 rounded-lg hover:transition-all"
           onClick={() => navigate("/carrito")} // Redirige a "/carrito"
         >
           <img src={Carro} alt="icon_navbar" className="w-8 mr-3" />
