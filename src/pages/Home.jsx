@@ -1,12 +1,12 @@
 // Home.jsx
-import React, { useEffect, useContext } from "react";
-import Swal from "sweetalert2";
+import React, { useContext } from "react";
 import { CartContext } from "../CartContext.jsx";
 import LogoSM from "../components/LogoSM";
-import Wpp from "../components/New/Wpp.jsx";
 import CardV2 from "../components/New/CardV2.jsx";
 import Navbar from "../components/Navbar.jsx";
 import datos from "../../datos.json";
+
+import BotonComentario from "../components/New/BotonComentario.jsx";
 
 export default function Home() {
   const { addToCart } = useContext(CartContext); // Usar el contexto
@@ -30,6 +30,7 @@ export default function Home() {
         </div>
 
         <Navbar />
+        < BotonComentario />
       </div>
     </div>
   );
