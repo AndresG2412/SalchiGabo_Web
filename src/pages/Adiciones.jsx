@@ -37,7 +37,7 @@ export default function Adiciones() {
 
   // Función para enviar el pedido por WhatsApp
   const factura = () => {
-    const phoneNumber = '3157870130'; // Número de teléfono de WhatsApp
+    const phoneNumber = '3106873378'; // Número de teléfono de WhatsApp
 
     // Crear el mensaje con los productos, adiciones y el total
     const productos = cart.map((item) => `${item.titulo} - $${item.precio}`).join("\n");
