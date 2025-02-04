@@ -33,8 +33,10 @@ export default function Carrito() {
   };
 
   return (
-    <>
-      <LogoSM />
+    <div className="h-screen flex flex-col justify-center">
+      <div className="">
+        <LogoSM />
+      </div>
 
       <div className="p-4">
         <h1 className="text-4xl font-bold text-white text-center mb-8">Carrito de Compras</h1>
@@ -71,6 +73,6 @@ export default function Carrito() {
       </div>
 
       <Navbar />
-    </>
+    </div>
   );
 }

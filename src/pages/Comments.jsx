@@ -3,10 +3,10 @@ import LogoSM from "../components/LogoSM";
 
 export default function Comments(){
     return(
-        <div>
+        <div className='md:h-screen md:flex md:flex-col justify-center'>
             <LogoSM />
             
-            <div className="bg-white flex flex-col justify-center items-center gap-y-4  py-4 my-12 mx-auto rounded-lg md:w-1/5">
+            <div className="bg-white flex flex-col justify-center items-center gap-y-4  py-4 my-12 mx-auto rounded-lg md:w-2/5">
                 <div>
                     <p className="tracking-wide text-xl font-nunito font-semibold">Escribenos tu comentario!</p>
                     <p className="tracking-wide text-xl font-nunito font-semibold border-b-2 border-[#222]">lo tendremos presente 😁</p>

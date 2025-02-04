@@ -13,8 +13,10 @@ export default function Home() {
 
   return (
     <div>
-      <div className="">
-        <LogoSM />
+      <div className="md:h-screen md:flex md:flex-col justify-center">
+        <div className="flex-shrink-0">
+          <LogoSM />
+        </div>
 
         <div className="md:flex md:justify-center">
           {datos.map((item) => (

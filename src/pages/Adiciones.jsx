@@ -54,9 +54,9 @@ export default function Adiciones() {
   };
 
   return (
-    <>
+    <div className="h-screen flex flex-col justify-center">
       <LogoSM />
-      <div className="md:mt-10 md:w-2/5 bg-white mx-auto rounded-lg border-2 border-b-4 border-black flex flex-col items-center text-center gap-y-4 py-8 text-xl font-semibold tracking-wide">
+      <div className="md:w-2/5 bg-white mx-auto rounded-lg border-2 border-b-4 border-black flex flex-col items-center text-center gap-y-4 py-8 text-xl font-semibold tracking-wide">
         <div className="text-2xl font-bold tracking-wider border-b-4 border-slate-900 pb-2">
           <p>¿Deseas alguna adición?</p>
           <p>Solo por $3.000 en tu pedido!</p>
@@ -90,6 +90,6 @@ export default function Adiciones() {
         </button>
       </div>
       <Navbar />
-    </>
+    </div>
   );
 }

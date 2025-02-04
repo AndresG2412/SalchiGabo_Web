@@ -7,7 +7,7 @@ export default function Navbar() {
   const navigate = useNavigate(); // Inicializa el hook useNavigate
 
   return (
-    <div className="w-screen flex">
+    <div className="w-screen flex pt-6">
       {/* Botón para ir a "/" */}
       <div className="mx-auto flex">
         <button
