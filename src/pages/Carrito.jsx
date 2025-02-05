@@ -13,7 +13,7 @@ export default function Carrito() {
   const total = cart.reduce((acumulador, producto) => acumulador + parseFloat(producto.precio), 0);
 
   const hacerPedido = () => {
-    const phoneNumber = '3106873378'; // Número de teléfono de WhatsApp
+    const phoneNumber = '3168054540'; // Número de teléfono de WhatsApp
 
     // Crear el mensaje con los productos y el total
     const productos = cart.map((item) => `${item.titulo} - $${item.precio}`).join("\n");
