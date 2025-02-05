@@ -62,29 +62,35 @@ export default function Adiciones() {
           <p>Solo por $3.000 en tu pedido!</p>
         </div>
 
-        {[
-          "Queso Fundido",
-          "Tocineta Crujiente",
-          "Huevos de Codorniz (x6)",
-          "Medallones de Plátano Dulce",
-        ].map((adicion, index) => (
-          <label key={index} className="flex items-center gap-x-2 hover:cursor-pointer hover:scale-110 hover:transition-all select-none">
-            <input
-              type="checkbox"
-              checked={selectedAdiciones.includes(adicion)}
-              onChange={() => handleAdicionChange(adicion)}
-              className="hover:cursor-pointer"
-            />
-            {adicion}
-          </label>
-        ))}
+        {/* Contenedor de adiciones con CSS Grid */}
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2 px-8">
+          {[
+            "Queso Fundido",
+            "Tocineta Crujiente",
+            "Huevos de Codorniz (x6)",
+            "Medallones de Plátano Dulce",
+          ].map((adicion, index) => (
+            <label
+              key={index}
+              className="border-2 border-black bg-white flex items-center gap-x-2 hover:cursor-pointer hover:scale-105 hover:transition-all select-none p-2 rounded-lg"
+            >
+              <input
+                type="checkbox"
+                checked={selectedAdiciones.includes(adicion)}
+                onChange={() => handleAdicionChange(adicion)}
+                className="hover:cursor-pointer"
+              />
+              {adicion}
+            </label>
+          ))}
+        </div>
 
-        <p className="mt-4 text-lg">Total Adiciones: ${totalAdiciones}.000</p>
+        <p className="mt-2 text-lg">Total Adiciones: ${totalAdiciones}.000</p>
         <p className="text-lg font-bold">Total General: ${totalGeneral}.000</p>
 
         <button
           onClick={factura}
-          className="mt-6 border-2 border-b-4 border-black py-2 px-4 text-xl tracking-wide font-bold rounded-lg hover:cursor-pointer hover:scale-110 hover:transition-all uppercase bg-green-200"
+          className="mt-2 border-2 border-b-4 border-black py-2 px-4 text-xl tracking-wide font-bold rounded-lg hover:cursor-pointer hover:scale-110 hover:transition-all uppercase bg-green-200"
         >
           Hacer Pedido!
         </button>
