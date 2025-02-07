@@ -1,8 +1,5 @@
-# React + Vite
+# Salchi Gabo Web!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projecto personal de emprendimiento familiar que consta de una pequeña pagina web que carga un menu digital a gusto personal y adiciona una pasarela de pedidos "carrito" añadiendo productos a el, haciendo mas facil la toma de pedidos para el negocio, ahorrando tener que preguntar a todos lo mismo y haciendo que los clientes respondan solo, automatizando dicha funcion
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Usando React, Vite, TailwindCSS, SweetAlert2
