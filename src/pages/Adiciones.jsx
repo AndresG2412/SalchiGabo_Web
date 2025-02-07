@@ -68,7 +68,7 @@ export default function Adiciones() {
             "Queso Fundido",
             "Tocineta Crujiente",
             "Huevos de Codorniz (x6)",
-            "Medallones de Plátano Dulce",
+            // "Medallones de Plátano Dulce",
           ].map((adicion, index) => (
             <label
               key={index}

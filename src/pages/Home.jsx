@@ -31,6 +31,7 @@ export default function Home() {
           ))}
         </div>
 
+        <div className="mb-28"></div>
         <Navbar />
         <Btn />
       </div>
